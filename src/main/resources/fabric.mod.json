@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "modsuperfixe",
+	"version": "${version}",
+	"name": "Modzinho super fixe",
+	"description": "Help I'm drowning",
+	"authors": [
+		"Foxy!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.foxy.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.foxy.tutorialmod.TutorialModDataGenerator"
+		],
+        "Client": [
+          "net.foxy.tutorialmod.TutorialModClient"
+        ]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
